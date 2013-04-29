@@ -2,8 +2,9 @@ Wrapper around Yusuki Kawasaki's ObjTree.js http://www.kawa.net/works/js/xml/obj
 
 Adapted for use in non-browser based environment, i.e., Node.js
 
-{
-example.js file
+
+example.js file:
+<code>
 
 require('../ObjTree');
 require('../index');
@@ -45,5 +46,4 @@ test('xotree-test', function(t) {
 	// round trip support
 	t.equal(_.isEqual(xotree.parseXML( xotree.writeXML( objtree_json )), xotree.parseXML( objtree_xml )), true);	
 });
-
-}
+</code>
