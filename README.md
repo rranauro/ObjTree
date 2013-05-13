@@ -1,6 +1,12 @@
 #node-ObjTree.js
 
-node-ObjTree.js is a parser/generater for XML source code and JavaScript object. The original version is [XML.ObjTree](http://www.kawa.net/works/js/xml/objtree-e.html) developed by Yusuke Kawasaki. It is modified by Ronald Ranauro so that it can be used both in the [node.js](http://nodejs.org) and browser.
+Based on the original version is [XML.ObjTree](http://www.kawa.net/works/js/xml/objtree-e.html) 
+developed by Yusuke Kawasaki. node-ObjTree.js is a parser/generater for XML source 
+code and JavaScript objects. We modified it by testing for [node.js](http://nodejs.org) and adding 
+[xmldom](https://github.com/jindw/xmldom.git), which emulates browser data structures on the 
+server side. In this way ObjTree.js can be used in server applications and in the
+browser. We changed nothing in Yusuke's code, though we include his documentation here for 
+convenience.
 
 ##Download
 
