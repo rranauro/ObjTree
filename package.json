@@ -1,11 +1,11 @@
 {
   "author": "Yusuki Kawasaki, adapted for Node.js by Ron Ranauro <ron@inciteadvisors.com>",
-  "name": "node-ObjTree",
+  "name": "js-ObjTree",
   "description": "Yusuki Kawasaki's ObjTree.js adapted for execution under Node.js",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/rranauro/node-ObjTree.git"
+    "url": "git://github.com/rranauro/js-ObjTree.git"
   },
   "scripts": {
     "test": "node ./test/example.js"
