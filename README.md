@@ -1,20 +1,20 @@
-#node-ObjTree.js
+#js-ObjTree.js
+
+##Overview
 
 Based on the original version is [XML.ObjTree](http://www.kawa.net/works/js/xml/objtree-e.html) 
-developed by Yusuke Kawasaki. node-ObjTree.js is a parser/generater for XML source 
+developed by Yusuke Kawasaki. js-ObjTree.js is a parser/generater for XML source 
 code and JavaScript objects. We modified it by testing for [node.js](http://nodejs.org) and adding 
 [xmldom](https://github.com/jindw/xmldom.git), which emulates browser data structures on the 
-server side. In this way ObjTree.js can be used in server applications and in the
+server side. In this way js-ObjTree.js can be used in server applications and in the
 browser. We changed nothing in Yusuke's code, though we include his documentation here for 
 convenience.
 
-##Download
+##Example
 
-The source code is available for download from [GitHub](https://github.com/rranauro/node-ObjTree). Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
+[Link]()
 
-    npm install node-ObjTree
-
-##Documentation
+##Methods
 
 * [XML.ObjTree](#XML.ObjTree)
 * [parseXML](#parseXML)
@@ -162,5 +162,13 @@ __Result:__
     </children>
     </family>';
     
+##Install
+
+The source code is available for download from [GitHub](https://github.com/rranauro/js-ObjTree). Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
+
+    npm install js-ObjTree
     
+##License
+
+
  
