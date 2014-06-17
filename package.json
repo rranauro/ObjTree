@@ -11,7 +11,10 @@
     "test": "node ./test/example.js"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "tape": "",
+    "xmldom": ""
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
