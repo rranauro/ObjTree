@@ -132,6 +132,21 @@ if (typeof window === 'undefined') {
 	        tmp[root.nodeName] = json;          // root nodeName
 	        json = tmp;
 	    }
+
+		if ( this.soft_arrays ) {
+			var augmentObject = function ( obj ) {
+				if ( typeof obj != 'string' ) {
+					for ( var property in obj ) {
+						augmentObject( obj[property] );
+					}
+					if ( ! obj.length ) {
+						obj.length = 1; obj[0] = obj;
+					}
+				}
+			};
+			augmentObject( json );
+		}
+
 	    return json;
 	};
 
