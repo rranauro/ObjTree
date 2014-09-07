@@ -135,7 +135,7 @@ if (typeof window === 'undefined') {
 
 		if ( this.soft_arrays ) {
 			var augmentObject = function ( obj ) {
-				if ( typeof obj != 'string' ) {
+				if ( typeof obj !== 'string' ) {
 					for ( var property in obj ) {
 						augmentObject( obj[property] );
 					}

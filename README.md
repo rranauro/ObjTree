@@ -1,18 +1,14 @@
-#js-ObjTree.js
+# ObjTree
 
-##Overview
+## Overview
 
 Based on the original version is [XML.ObjTree](http://www.kawa.net/works/js/xml/objtree-e.html) 
-developed by Yusuke Kawasaki. js-ObjTree.js is a parser/generater for XML source 
+developed by Yusuke Kawasaki. ObjTree.js is a parser/generater for XML source 
 code and JavaScript objects. We modified it by testing for [node.js](http://nodejs.org) and adding 
 [xmldom](https://github.com/jindw/xmldom.git), which emulates browser data structures on the 
-server side. In this way js-ObjTree.js can be used in server applications and in the
+server side. In this way ObjTree.js can be used in server applications and in the
 browser. We changed nothing in Yusuke's code, though we include his documentation here for 
 convenience.
-
-##Example
-
-[Link]()
 
 ##Methods
 
@@ -20,6 +16,7 @@ convenience.
 * [parseXML](#parseXML)
 * [attr_prefix](#attr_prefix)
 * [force_array](#force_array)
+* [soft_arrays](#soft_arraya)
 * [writeXML](#writeXML)
 
 <a name="XML.ObjTree" />
@@ -138,7 +135,14 @@ __Result:__
            }
        }
     }
-    
+   
+<a name="soft_arrays" />
+### soft_arrays
+Eliminate the need for <code>force_array</code>
+
+	xotree.soft_arrays = true; 
+
+ 
 <a name="writeXML" />
 ### writeXML(json)
 
@@ -166,9 +170,12 @@ __Result:__
 
 The source code is available for download from [GitHub](https://github.com/rranauro/js-ObjTree). Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
 
-    npm install js-ObjTree
+    npm install ObjTree
     
 ##License
 
-
+Copyright (c) 2005-2006 Yusuke Kawasaki. All rights reserved.
+This program is free software; you can redistribute it and/or
+modify it under the Artistic license. Or whatever license I choose,
+which I will do instead of keeping this documentation like it is.
  

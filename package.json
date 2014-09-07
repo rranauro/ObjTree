@@ -1,6 +1,6 @@
 {
   "author": "Yusuki Kawasaki",
-  "name": "ObjTree",
+  "name": "objtree",
   "description": "Yusuki Kawasaki's ObjTree.js adapted for execution under Node.js by Ron Ranauro",
   "version": "0.1.1",
   "repository": {
@@ -15,7 +15,7 @@
 	"underscore": ""
   },
   "devDependencies": {
-    "tape": "",
+    "tape": ""
   },
   "optionalDependencies": {},
   "engines": {
