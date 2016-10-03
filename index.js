@@ -1,4 +1,1 @@
-var util = require('util');
-_ = require('underscore');
-UTIL = {};
-UTIL.XML = require('./ObjTree');
+exports.XML = require('./ObjTree');
