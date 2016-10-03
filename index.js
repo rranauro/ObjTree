@@ -1,1 +1,1 @@
-exports.XML = require('./ObjTree');
+exports.XML = require('./ObjTree').ObjTree;
