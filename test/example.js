@@ -1,5 +1,6 @@
-require('../index');
+var ObjTree = require('../index');
 var test = require('tape');
+var _ = require('underscore');
 
 var objtree_json = {
     'family': {
@@ -16,7 +17,7 @@ var objtree_json = {
     }
 }
 , objtree_xml = '<?xml version="1.0" encoding="UTF-8"?><family name="Kawasaki"><father>Yasuhisa</father><mother>Chizuko</mother><children><girl>Shiori</girl><boy>Yusuke</boy><boy>Kairi</boy></children></family>'
-, xotree = new UTIL.XML.ObjTree()
+, xotree = new ObjTree()
 , xotree_out;
 
 // tests to convert XML strings to JSON objects
