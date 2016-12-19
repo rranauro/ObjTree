@@ -306,10 +306,10 @@ ObjTree.prototype.xml_escape = function ( text ) {
     return String(text).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 };
 
-
-if (typeof window === 'undefined') {
+if (typeof module !== 'undefined' && module.exports) {
 	module.exports = ObjTree;
 }
+
 /*
 // ========================================================================
 
