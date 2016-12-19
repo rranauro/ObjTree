@@ -26,7 +26,7 @@ Initialize and return a new XML.ObjTree object.
 
 __Example:__
 
-    xotree = new XML.ObjTree()
+    xotree = new ObjTree()
 
 <a name="parseXML" />
 ### parseXML(xml)
