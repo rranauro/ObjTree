@@ -170,7 +170,7 @@ __Result:__
 
 The source code is available for download from [GitHub](https://github.com/rranauro/js-ObjTree). Besides that, you can also install using Node Package Manager [npm](https://npmjs.org):
 
-    npm install ObjTree
+    npm install objtree
     
 ##License
 
