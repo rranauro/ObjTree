@@ -2,7 +2,7 @@
   "author": "Yusuki Kawasaki",
   "name": "objtree",
   "description": "Yusuki Kawasaki's ObjTree.js adapted for execution under Node.js by Ron Ranauro",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "repository": {
     "type": "git",
     "url": "git://github.com/rranauro/ObjTree.git"
