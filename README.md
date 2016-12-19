@@ -12,7 +12,7 @@ convenience.
 
 ##Methods
 
-* [XML.ObjTree](#XML.ObjTree)
+* [XML.ObjTree](#ObjTree)
 * [parseXML](#parseXML)
 * [attr_prefix](#attr_prefix)
 * [force_array](#force_array)
@@ -20,9 +20,9 @@ convenience.
 * [writeXML](#writeXML)
 
 <a name="XML.ObjTree" />
-### XML.ObjTree()
+### ObjTree()
 
-Initialize and return a new XML.ObjTree object.
+Initialize and return a new ObjTree object.
 
 __Example:__
 
