@@ -36,11 +36,22 @@ ObjTree.prototype.attr_prefix = '-';
 ObjTree.prototype.overrideMimeType = 'text/xml';
 
 //  method: parseXML( xmlsource )
-
-ObjTree.prototype.parseXML = function ( xml ) {
+var DOMParserOptions = new DOMParser().options;
+ObjTree.prototype.parseXML = function ( xml, options ) {
+	
+	// allow errorHandler object passed in.
+	// allows filter spurious HTML5 warnings.
+	// DOMParserOptions above allows locator: {} property for lineno.
+	if (options) {
+		for (var i in DOMParserOptions) {
+			if (DOMParserOptions.hasOwnProperty(i)) {
+				options[i] = DOMParserOptions[i];
+			}
+		}
+	}
     var root;
     if ( window.DOMParser ) {
-        var xmldom = new DOMParser();
+        var xmldom = new DOMParser( options );
 //      xmldom.async = false;           // DOMParser is always sync-mode
         var dom = xmldom.parseFromString( xml, "application/xml" );
         if ( ! dom ) return;
