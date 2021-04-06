@@ -11,8 +11,8 @@
     "test": "node ./test/example.js"
   },
   "dependencies": {
-	"xmldom": "",
-	"underscore": ""
+    "xmldom": "",
+    "underscore": "^1.13.0-2"
   },
   "devDependencies": {
     "tape": ""
